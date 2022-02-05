@@ -5,12 +5,12 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #fdeb6c;
-  --secondary: #d94c2a;
-  --tertiary: #262223;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
+  --primary: #477998;
+  --secondary: #ADE1E5;
+  --tertiary: #593D3B;
+  --light: #BFC0C0;
+  --dark: #2D3142;
+  --darker: #291F1E;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -34,7 +34,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: var(--primary);
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
@@ -164,7 +164,9 @@ textarea {
 	border: 3px solid #cccccc;
 	padding: 5px;
 }
-
+.navbar{
+  background-color: var(--secondary)
+}
 .container {
   width: 85%;
   max-width: 1200px;

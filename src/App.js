@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div>
       <nav>
-          <ul>
+          <ul className="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
