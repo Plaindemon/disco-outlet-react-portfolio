@@ -1,9 +1,5 @@
 
-main {
-	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
-}
+
 :root {
   --primary: #a3bac3a8;
   --secondary: #ADE1E5;
@@ -22,10 +18,10 @@ main {
   box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
   min-height: 100%;
-}
+} */
 
 body {
   margin: 0;
