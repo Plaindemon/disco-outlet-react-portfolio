@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Resume() {
+function Footer() {
   return (
     <section>
-      <h1 id="resume">Resume Goes here</h1>
+      <h1 id="footer">Footer Goes here</h1>
     </section>
   );
 }
 
-export default Resume;
+export default Footer;

@@ -295,3 +295,23 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+#resume-section {
+  border: 2px solid var(--darker);
+  padding: 2px 2px;
+}
+
+.resume-head {
+  border: 2px solid var(--darker);
+  padding: 2px 2px;
+}
+
+.resume-education {
+  border: 2px solid var(--darker);
+  padding: 2px 2px;
+}
+
+.resume-box {
+  border: 2px solid var(--darker);
+  padding: 4px 2px;
+}
