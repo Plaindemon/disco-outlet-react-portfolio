@@ -330,5 +330,6 @@ a {
   border: 2px solid var(--darker);
   padding: 4px 2px;
   width: 100%;
+  background-color: var(--primary);
   
 }
