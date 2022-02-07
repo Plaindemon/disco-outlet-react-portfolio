@@ -1,28 +1,42 @@
 import React from 'react';
-
+import { Card, Button, ListGroup, ListItem } from 'react-bootstrap';
 
 function Resume() {
     return (
         <section id="resume-section">
+
+
             <h2 className="resume-head">Resume</h2>
-            <div className="resume-education">
-                <div className="resume-box">
-                    <h4>Education: </h4>
-                    <div>
-                        <h5>Certificate, Full Stack Web Development </h5>
-                        <h6>University of Utah - Salt Lake City, UT</h6>
-                        <h6>August 2021 - February 2022</h6>
-                    </div>
-                    <div>
+           
+  {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+  
+    
+
+  
+
+             <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                <Card.Header>Education: </Card.Header>
+                <ListGroup variant="flush">
+                        <ListGroup.Item>Certificate, Full Stack Web Development </ListGroup.Item>
+                        <ListGroup.Item>University of Utah - Salt Lake City, UT</ListGroup.Item>
+                        <ListGroup.Item>August 2021 - February 2022</ListGroup.Item>
+                    
+                </ListGroup>
+                <ListGroup variant="flush">
                         <h5>Bachelor's in Science</h5>
                         <h6>Utah State University - Logan, UT</h6>
                         <h6>August 2013 to May 2019</h6>
-                    </div>
-                    <div>
+                    
+                        </ListGroup>
+                    <ListGroup variant="flush">
+                        
                         <h5>Minor in Anthropology</h5>
                         <h6>Utah State University - Logan, UT</h6>
                         <h6>August 2013 to May 2019</h6>
-                    </div>
+                        </ListGroup>
+                    </Card.Body>
+                </Card>
                     <div className="resume-box">
                         <p>Company 1: Ken Garff Automotive Group</p>
                         <p> Years worked (2019-2020)</p>
@@ -69,8 +83,8 @@ function Resume() {
                         </ol>
 
                     </div>
-                </div>
-            </div>
+                
+            
 
             <div>
                 <h4>Technical Skills</h4>
