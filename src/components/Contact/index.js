@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Form, Button } from 'react-bootstrap';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -37,29 +38,29 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <Form className="contact">
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+        <Form.Group>
+          <Form.Label htmlFor="name">Name:</Form.Label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label htmlFor="email">Email address:</Form.Label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label htmlFor="message">Message:</Form.Label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
+        </Form.Group>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <Button data-testid="button" type="submit">Submit</Button>
       </form>
-    </section>
+    </Form>
   );
 }
 

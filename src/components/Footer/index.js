@@ -20,46 +20,31 @@ function Footer() {
       <Row>
         <Column>
           <Heading>About Us</Heading>
-          <FooterLink href="#">Aim</FooterLink>
-          <FooterLink href="#">Vision</FooterLink>
-          <FooterLink href="#">Testimonials</FooterLink>
-        </Column>
-        <Column>
-          <Heading>Services</Heading>
-          <FooterLink href="#">Writing</FooterLink>
-          <FooterLink href="#">Internships</FooterLink>
-          <FooterLink href="#">Coding</FooterLink>
-          <FooterLink href="#">Teaching</FooterLink>
+          <FooterLink href="about">About me</FooterLink>
         </Column>
         <Column>
           <Heading>Contact Us</Heading>
-          <FooterLink href="#">Plaindemon- benjamin chaplin</FooterLink>
+          <FooterLink href="contact">Plaindemon- benjamin chaplin</FooterLink>
           
         </Column>
         <Column>
-          <Heading>Social Media</Heading>
-          <FooterLink href="#">
-            <i className="fab fa-facebook-f">
-              <span style={{ marginLeft: "10px" }}>
-                Facebook
-              </span>
-            </i>
-          </FooterLink>
-          <FooterLink href="#">
+          <Heading>Social Media & Links </Heading>
+          
+          <FooterLink href="https://www.instagram.com/plaindemon/">
             <i className="fab fa-instagram">
               <span style={{ marginLeft: "10px" }}>
                 Instagram
               </span>
             </i>
           </FooterLink>
-          <FooterLink href="#">
-            <i className="fab fa-twitter">
+          <FooterLink href="https://github.com/Plaindemon">
+            <i className="fab fa-github">
               <span style={{ marginLeft: "10px" }}>
-                Twitter
+                Github
               </span>
             </i>
           </FooterLink>
-          <FooterLink href="#">
+          <FooterLink href="https://www.youtube.com/channel/UCEMRkkQ9fW2MZpi1sLab3ng">
             <i className="fab fa-youtube">
               <span style={{ marginLeft: "10px" }}>
                 Youtube

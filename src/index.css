@@ -1,9 +1,9 @@
 
 
 :root {
-  --primary: #a3bac3a8;
+  --primary: #0486b975;
   --secondary: #ADE1E5;
-  --tertiary: rgb(185, 137, 112);
+  --tertiary: rgba(8, 4, 236, 0.267);
   --light: #BFC0C0;
   --dark: #2D3142;
   --darker: #291F1E;
@@ -31,7 +31,7 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: var(--primary);
-  background-image: url('../src/assets/images/sunset.JPEG');
+  /* background-image: url('../src/assets/images/sunset.JPEG'); */
   background-size: auto;
   /* background-attachment:scroll; */
   color: var(--darker);
@@ -300,7 +300,8 @@ a {
   padding: 2px 2px;
   background-color: var(--primary);
   box-shadow: 10px 10px 5px grey;
-  /* display: grid; */
+  display: flex;
+  flex-direction: row;
   
   /* float: left; */
 }
@@ -309,9 +310,9 @@ a {
   border: 2px solid var(--darker);
   
   padding: 2px 2px;
-  display: flex;
+  /* display: flex;
   flex-direction:row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   background-color: var(--tertiary)
   
 }
@@ -328,4 +329,9 @@ a {
   width: 100%;
   background-color: var(--primary);
   
+}
+
+.contact {
+  padding: 10px;
+  background-color: var(--primary);
 }

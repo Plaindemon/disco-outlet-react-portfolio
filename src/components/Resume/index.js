@@ -1,16 +1,21 @@
-import React from 'react';
-import { Card, CardGroup, Button, ListGroup, ListItem, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, CardGroup, Button, ListGroup, ListItem, Row, Col, Accordion } from 'react-bootstrap';
 import { Container } from '../Footer/FooterStyles';
+import printPdf from 'print-js';
+
 
 function Resume() {
+
     return (
         <Container>
-            
+            <Button id="print" type="button" onClick={printPdf}>
+            Print PDF
+        </Button>
         <Row xs={1} md={2}>
             
             <Col>
 
-                    <Card className="resume-section" style={{ width: '18rem' }}>
+                    <Card className="resume-section" style={{ width: '100%' }}>
                         <Card.Body>
                             <Card.Title className="resume-head">Education: </Card.Title>
                             <ListGroup className="resume-box" variant="flush">
@@ -35,7 +40,7 @@ function Resume() {
                     </Card>
                     </Col>
             <Col>
-                    <Card className="resume-section" style={{ width: '18rem' }}>
+                    <Card className="resume-section" style={{ width: '100%' }}>
 
                         <Card.Header className="resume-head">Company 1: Ken Garff Automotive Group</Card.Header>
 
@@ -63,7 +68,7 @@ function Resume() {
 
         <Row xs={1} md={2}>
             <Col>
-                    <Card className="resume-section" style={{ width: '18rem' }}>
+                    <Card className="resume-section" style={{ width: '100%' }}>
                         <Card.Body>
                             <Card.Header className="resume-head">Company 2: Michael Kors</Card.Header>
                             <Card.Body className="resume-box">
@@ -81,7 +86,7 @@ function Resume() {
                             </Card.Body>
                         </Card.Body>
                     </Card>
-                    <Card className="resume-section" style={{ width: '18rem' }}>
+                    <Card className="resume-section" style={{ width: '100%' }}>
                         <Card.Body>
                             <Card.Header className="resume-head">Company 3: Rover (Pet care mobile app) </Card.Header>
                             <Card.Title className="resume-head">Years worked (2009-2022)</Card.Title>
@@ -99,7 +104,7 @@ function Resume() {
                     </Row >
         <Row xs={1} md={2}>
         <Col>
-            <Card className="resume-section" style={{ width: '18rem' }}>
+            <Card className="resume-section" style={{ width: '100%' }}>
                 <Card.Body>
                     <Card.Header className="resume-head">Technical Skills</Card.Header>
                     <ListGroup className="resume-box" variant="flush">
