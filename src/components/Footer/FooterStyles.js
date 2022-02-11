@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-    position: fixed;
+    // position: fixed;
     padding-top: 15px;
     left: 0;
     bottom: 0;
