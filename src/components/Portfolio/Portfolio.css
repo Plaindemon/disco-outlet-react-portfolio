@@ -1,9 +1,15 @@
-.work-section{
+.portfolio-box{
     display: flex;
-    align-items: center;
+}
+
+.work-section{
+    flex-direction: row;
+    justify-content: start;
+    /* align-items: center; */
 }
 
 .card-body{
+    
     background-color:#ADE1E5;
     border-radius: 10px;
     padding: 20px;

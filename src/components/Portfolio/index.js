@@ -11,8 +11,10 @@ import "./Portfolio.css"
 
 function Portfolio() {
     return (
-        <section className="work-section">
+        <div className="portfolio-box">
             <h3 id="portfolio">Portfolio: </h3>
+ <section className="work-section">
+            
             <ul className="work-title">
 
                 <div className="card-body" style={{ width: '18rem' }}>
@@ -68,6 +70,8 @@ function Portfolio() {
                 </li> */}
             </ul>
         </section>
+        </div>
+       
     );
 }
 

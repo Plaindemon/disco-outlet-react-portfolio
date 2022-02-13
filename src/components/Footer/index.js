@@ -7,54 +7,55 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <Box>
-    {/* <h1 style={{ color: "blue", 
+    <Box className="footer-box">
+      {/* <h1 style={{ color: "blue", 
                  textAlign: "center", 
                  marginTop: "-50px" }}>
       footer
     </h1> */}
-    <Container>
-      <Row>
-        <Column>
-          <Heading>About Us</Heading>
-          <FooterLink href="about">About me</FooterLink>
-        </Column>
-        <Column>
-          <Heading>Contact Us</Heading>
-          <FooterLink href="contact">Plaindemon- benjamin chaplin</FooterLink>
-          
-        </Column>
-        <Column>
-          <Heading>Social Media & Links </Heading>
-          
-          <FooterLink href="https://www.instagram.com/plaindemon/">
-            <i className="fab fa-instagram">
-              <span style={{ marginLeft: "10px" }}>
-                Instagram
-              </span>
-            </i>
-          </FooterLink>
-          <FooterLink href="https://github.com/Plaindemon">
-            <i className="fab fa-github">
-              <span style={{ marginLeft: "10px" }}>
-                Github
-              </span>
-            </i>
-          </FooterLink>
-          <FooterLink href="https://www.youtube.com/channel/UCEMRkkQ9fW2MZpi1sLab3ng">
-            <i className="fab fa-youtube">
-              <span style={{ marginLeft: "10px" }}>
-                Youtube
-              </span>
-            </i>
-          </FooterLink>
-        </Column>
-      </Row>
-    </Container>
-  </Box>
+      <Container className="footer-container">
+        <Row className="footer-row">
+          <Column className="footer-column">
+            <Heading className="footer-header">About Us</Heading>
+            <FooterLink className="footer-link" href="about">About me</FooterLink>
+          </Column>
+          <Column className="footer-column">
+            <Heading className="footer-header">Contact Us</Heading>
+            <FooterLink className="footer-link" href="contact">Plaindemon- benjamin chaplin</FooterLink>
+
+          </Column>
+          <Column className="footer-column">
+            <Heading className="footer-header">Social Media & Links </Heading>
+
+            <FooterLink className="footer-link" href="https://www.instagram.com/plaindemon/">
+              <i className="fab fa-instagram">
+                <span style={{ marginLeft: "10px" }}>
+                  Instagram
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink className="footer-link" href="https://github.com/Plaindemon">
+              <i className="fab fa-github">
+                <span style={{ marginLeft: "10px" }}>
+                  Github
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink className="footer-link" href="https://www.youtube.com/channel/UCEMRkkQ9fW2MZpi1sLab3ng">
+              <i className="fab fa-youtube">
+                <span style={{ marginLeft: "10px" }}>
+                  Youtube
+                </span>
+              </i>
+            </FooterLink>
+          </Column>
+        </Row>
+      </Container>
+    </Box>
   );
 }
 

@@ -1,9 +1,12 @@
 import React from 'react';
+import "./Home.css";
 
 function Home() {
   return (
-    <section>
-      <h1 id="Home">Welcome! Take a look around</h1>
+    <section className="home">
+      <div id="home-div">
+        <h2 className="home-header">Welcome! Take a look around</h2>
+      </div>
     </section>
   );
 }
