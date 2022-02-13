@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { Card, CardGroup, Button, ListGroup, ListItem, Row, Col, Accordion } from 'react-bootstrap';
 import { Container } from '../Footer/FooterStyles';
-import printPdf from 'print-js';
+import resumePdf  from "../../assets/pdf/resume.pdf"
+
 
 
 function Resume() {
 
     return (
         <Container>
-            <Button id="print" type="button" onClick={printPdf}>
-            Print PDF
-        </Button>
-        <Row xs={1} md={2}>
-            
-            <Col>
+            <Button id="print" type="button">
+            <a href={resumePdf}>Print PDF</a>
+            </Button> 
+            <Row xs={1} md={2}>
+
+                <Col>
 
                     <Card className="resume-section" style={{ width: '100%' }}>
                         <Card.Body>
@@ -38,8 +39,8 @@ function Resume() {
                             </ListGroup>
                         </Card.Body>
                     </Card>
-                    </Col>
-            <Col>
+                </Col>
+                <Col>
                     <Card className="resume-section" style={{ width: '100%' }}>
 
                         <Card.Header className="resume-head">Company 1: Ken Garff Automotive Group</Card.Header>
@@ -63,11 +64,11 @@ function Resume() {
 
 
                 </Col>
-        </Row>
+            </Row>
 
 
-        <Row xs={1} md={2}>
-            <Col>
+            <Row xs={1} md={2}>
+                <Col>
                     <Card className="resume-section" style={{ width: '100%' }}>
                         <Card.Body>
                             <Card.Header className="resume-head">Company 2: Michael Kors</Card.Header>
@@ -100,50 +101,50 @@ function Resume() {
                             </ListGroup>
                         </Card.Body>
                     </Card>
-            </Col>
-                    </Row >
-        <Row xs={1} md={2}>
-        <Col>
-            <Card className="resume-section" style={{ width: '100%' }}>
-                <Card.Body>
-                    <Card.Header className="resume-head">Technical Skills</Card.Header>
-                    <ListGroup className="resume-box" variant="flush">
-                        <ListGroup.Item>JavaScript ES6+</ListGroup.Item>
-                        <ListGroup.Item>CSS3</ListGroup.Item>
-                        <ListGroup.Item>HTML5</ListGroup.Item>
-                        <ListGroup.Item>SQL</ListGroup.Item>
-                        <ListGroup.Item>NoSQL</ListGroup.Item>
-                        <ListGroup.Item>GitHub</ListGroup.Item>
-                        <ListGroup.Item>MongoDB</ListGroup.Item>
-                        <ListGroup.Item>MySQL</ListGroup.Item>
-                        <ListGroup.Item>Express</ListGroup.Item>
-                        <ListGroup.Item>React</ListGroup.Item>
-                        <ListGroup.Item>Node</ListGroup.Item>
-                        <ListGroup.Item>Handlebars</ListGroup.Item>
-                        <ListGroup.Item>jQuery</ListGroup.Item>
-                        <ListGroup.Item>Bootstrap</ListGroup.Item>
-                    </ListGroup>
-                    <Card.Header className="resume-head">Skills</Card.Header>
-                    <ListGroup className="resume-box" variant="flush">
-                        <ListGroup.Item>Communication</ListGroup.Item>
-                        <ListGroup.Item>Chemistry</ListGroup.Item>
-                        <ListGroup.Item>Ceramics</ListGroup.Item>
-                        <ListGroup.Item>Inventory Management</ListGroup.Item>
-                        <ListGroup.Item>Supply Management</ListGroup.Item>
-                        <ListGroup.Item>Safe Chemical Handling</ListGroup.Item>
-                        <ListGroup.Item>Customer Care</ListGroup.Item>
-                        <ListGroup.Item>Customer Service</ListGroup.Item>
-                        <ListGroup.Item>Customer Support</ListGroup.Item>
+                </Col>
+            </Row >
+            <Row xs={1} md={2}>
+                <Col>
+                    <Card className="resume-section" style={{ width: '100%' }}>
+                        <Card.Body>
+                            <Card.Header className="resume-head">Technical Skills</Card.Header>
+                            <ListGroup className="resume-box" variant="flush">
+                                <ListGroup.Item>JavaScript ES6+</ListGroup.Item>
+                                <ListGroup.Item>CSS3</ListGroup.Item>
+                                <ListGroup.Item>HTML5</ListGroup.Item>
+                                <ListGroup.Item>SQL</ListGroup.Item>
+                                <ListGroup.Item>NoSQL</ListGroup.Item>
+                                <ListGroup.Item>GitHub</ListGroup.Item>
+                                <ListGroup.Item>MongoDB</ListGroup.Item>
+                                <ListGroup.Item>MySQL</ListGroup.Item>
+                                <ListGroup.Item>Express</ListGroup.Item>
+                                <ListGroup.Item>React</ListGroup.Item>
+                                <ListGroup.Item>Node</ListGroup.Item>
+                                <ListGroup.Item>Handlebars</ListGroup.Item>
+                                <ListGroup.Item>jQuery</ListGroup.Item>
+                                <ListGroup.Item>Bootstrap</ListGroup.Item>
+                            </ListGroup>
+                            <Card.Header className="resume-head">Skills</Card.Header>
+                            <ListGroup className="resume-box" variant="flush">
+                                <ListGroup.Item>Communication</ListGroup.Item>
+                                <ListGroup.Item>Chemistry</ListGroup.Item>
+                                <ListGroup.Item>Ceramics</ListGroup.Item>
+                                <ListGroup.Item>Inventory Management</ListGroup.Item>
+                                <ListGroup.Item>Supply Management</ListGroup.Item>
+                                <ListGroup.Item>Safe Chemical Handling</ListGroup.Item>
+                                <ListGroup.Item>Customer Care</ListGroup.Item>
+                                <ListGroup.Item>Customer Service</ListGroup.Item>
+                                <ListGroup.Item>Customer Support</ListGroup.Item>
 
-                    </ListGroup>
-                </Card.Body>
-            </Card>
+                            </ListGroup>
+                        </Card.Body>
+                    </Card>
 
-           
-                    </Col>
-                </Row >
-            
-            </Container>
+
+                </Col>
+            </Row >
+
+        </Container>
     );
 }
 
