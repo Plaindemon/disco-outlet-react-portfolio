@@ -1,3 +1,16 @@
+# React Portfolio
+
+## Description
+
+A simple style portfolio/resume for plaindemon, a junior web developer.
+
+## Link to deployed site
+https://intense-badlands-70472.herokuapp.com/
+
+
+## Link to short video of working application
+https://watch.screencastify.com/v/6sUMagm0eJJbAwkwwrzy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
