@@ -1,15 +1,23 @@
 .portfolio-box{
     display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+
+.carousel {
+    margin: 10px;
+    background-color: #ADE1E5;
 }
 
 .work-section{
     flex-direction: row;
     justify-content: start;
+    padding: 20px;
     /* align-items: center; */
 }
 
-.card-body{
-    
+.card-body-port{
+    align-items: center;
     background-color:#ADE1E5;
     border-radius: 10px;
     padding: 20px;
@@ -17,15 +25,15 @@
     transition: 0.3s;
     
 }
-.card-body:hover{
+.card-body-port:hover{
     /* display: flex; */
     /* align-items: center; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     
 }
 
-.work-title{
-    padding: 10px;
+.card-list{
+    /* padding: 10px; */
 }
 
 .work-link{

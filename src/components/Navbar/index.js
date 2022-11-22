@@ -6,7 +6,7 @@ function Nav() {
   return (
     <header>
   <h2>
-    <Link to="/">
+    <Link to="/home">
       <span role="img" aria-label="camera"> 🛸 Disco Outlet 🛸 </span>
     </Link>
   </h2>
