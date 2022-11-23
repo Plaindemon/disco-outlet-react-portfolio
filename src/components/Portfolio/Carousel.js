@@ -11,7 +11,7 @@ function CarouselFade() {
   return (
     <Carousel fade>
       <Carousel.Item className="carousel">
-          <Carousel.Caption>
+          <Carousel.Caption className="carousel-caption">
             <h3 className="work-title">Routes</h3>
             <p>Ski, Snowboard, Run with friends!</p>
           </Carousel.Caption>
@@ -24,7 +24,7 @@ function CarouselFade() {
           />
         </Carousel.Item>
         <Carousel.Item className="carousel">
-          <Carousel.Caption>
+          <Carousel.Caption className="carousel-caption">
             <h3>Randonnee</h3>
             <p>Climb with friends!</p>
           </Carousel.Caption>
@@ -36,7 +36,7 @@ function CarouselFade() {
           />
         </Carousel.Item>
         <Carousel.Item className="carousel">
-          <Carousel.Caption>
+          <Carousel.Caption className="carousel-caption">
             <h3>Weather Trails</h3>
             <p>
               Checks the weather and 5 day forecast and can search National Parks service for parks in each State
