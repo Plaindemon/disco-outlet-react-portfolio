@@ -15,7 +15,7 @@ function CarouselFade() {
             <h3 className="work-title">Routes</h3>
             <p>Ski, Snowboard, Run with friends!</p>
           </Carousel.Caption>
-
+        
           <img
             className="d-block w-60 my-2"
             alt="First slide cover"

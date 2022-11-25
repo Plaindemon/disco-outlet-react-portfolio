@@ -5,7 +5,6 @@ import {
   Button,
   ListGroup,
   ListItem,
-  Row,
   Col,
   Accordion,
 } from "react-bootstrap";
@@ -17,10 +16,10 @@ import "./resume.css";
 function Resume() {
   return (
     <div>
-      <Button id="print" type="button">
-        <a href={resumePdf}>Print PDF</a>
+      <Button id="print" type="button" className="btn button">
+        <a href={resumePdf} className="button-style">Print PDF</a>
       </Button>
-
+<div></div>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Education: </Accordion.Header>
@@ -58,20 +57,9 @@ function Resume() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
+          <Accordion.Header>Work History:</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-      <Row xs={1} md={2}>
-        <Col>
+          <Col>
           <Card className="resume-section" style={{ width: "100%" }}>
             <Card.Header className="resume-head">
               Company 1: Ken Garff Automotive Group
@@ -87,38 +75,22 @@ function Resume() {
               </Card.Title>
               <ListGroup className="resume-box" variant="flush">
                 <ListGroup.Item>
-                  • Set daily and weekly appointments and communicated
-                  information to potential customers before their in store
-                  visits
+                  •  Increased individual sales progressively each month by 20%
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  • Used email, phone or text correspondence to answer customer
-                  inquiries in a timely and quality manner
+                  •  Collaborated with a team of 15 people to increase departments sales above goals  consistently each month
                 </ListGroup.Item>
                 <ListGroup.Item>
                   • Managed time proficiently to make more sales inquiries and
                   bring in more potential clientele{" "}
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  • Focused on creating a high-quality customer experience by
-                  fully explaining the car buying process to clients and
-                  answering any questions they came up with during the process{" "}
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  • Maintained excellent communication to fellow coworkers and
-                  managers to best help streamline the car buying process
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  • Organized vehicles on the lot and practiced safe motor
-                  vehicle handling and maintenance
+                  •  Created returning clients and lifetime customers by using quality service and communication skills
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-
-      <Row xs={1} md={2}>
         <Col>
           <Card className="resume-section" style={{ width: "100%" }}>
             <Card.Body>
@@ -136,27 +108,19 @@ function Resume() {
                 <ListGroup className="resume-box" variant="flush">
                   <ListGroup.Item>
                     {" "}
-                    • Performed excellent communication skills with customers to
-                    prioritize their needs
+                    • Created innovative backroom organization for quick refilling and easy inventory management of new products
                   </ListGroup.Item>
                   <ListGroup.Item>
                     {" "}
-                    • Personalized the customer experience for each individual
-                    customer
+                    • Each month I individually sold between 30-40% of the stores monthly sales
                   </ListGroup.Item>
                   <ListGroup.Item>
                     {" "}
-                    • Top 3 in sales performance every month
+                    • Top 3 in sales performance every month throughout my two years at the store
                   </ListGroup.Item>
                   <ListGroup.Item>
                     {" "}
-                    • Processed shipment and organized back of house on daily
-                    basis{" "}
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    {" "}
-                    • Promoted new product with detailed explanations on what’s
-                    new and cultivated a positive customer service
+                    •  Created displays to increase the sales of both new and old product in the store
                   </ListGroup.Item>
                 </ListGroup>
               </Card.Body>
@@ -177,24 +141,26 @@ function Resume() {
               <ListGroup className="resume-box" variant="flush">
                 <ListGroup.Item>
                   {" "}
-                  • Scheduled times for dog care overnight stays
+                  •  Grew a successful small business with over 30 clients within few months time
                 </ListGroup.Item>
                 <ListGroup.Item>
                   {" "}
-                  • Cared for and monitor owners pets
+                  • Accumulated a 5 star customer satisfaction rate with over ten profile reviews
                 </ListGroup.Item>
                 <ListGroup.Item>
                   {" "}
-                  • Used owner instructions for walking, feeding and exercise
-                  programs from pet owners{" "}
+                  • Maintained long term customers using high quality communication services, photo updates, and quick response time
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-      <Row xs={1} md={2}>
-        <Col>
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>Technical Skills</Accordion.Header>
+          <Accordion.Body>
+          <Col>
           <Card className="resume-section" style={{ width: "100%" }}>
             <Card.Body>
               <Card.Header className="resume-head">
@@ -203,6 +169,8 @@ function Resume() {
               <ListGroup className="resume-box" variant="flush">
                 <ListGroup.Item>JavaScript ES6+</ListGroup.Item>
                 <ListGroup.Item>CSS3</ListGroup.Item>
+                <ListGroup.Item>Typescript</ListGroup.Item>
+                <ListGroup.Item>Angular</ListGroup.Item>
                 <ListGroup.Item>HTML5</ListGroup.Item>
                 <ListGroup.Item>SQL</ListGroup.Item>
                 <ListGroup.Item>NoSQL</ListGroup.Item>
@@ -231,7 +199,10 @@ function Resume() {
             </Card.Body>
           </Card>
         </Col>
-      </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+     
     </div>
   );
 }
