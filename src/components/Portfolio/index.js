@@ -1,14 +1,23 @@
 import React from "react";
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
+import RoutesProject from "./Routes";
+import RandonneeProject from "./Randonnee";
+import WeatherTrailsProject from "./WeatherTrails";
+import RobotRent from "./RobotRent";
 import "./Portfolio.css";
 
 
 function Portfolio() {
   return (
     <div className="portfolio-box">
-      <Carousel />
-      {/* <h3 id="portfolio">Portfolio: </h3> */}
+      {/* <Carousel /> */}
       
+      <h3 id="portfolio">Portfolio: </h3>
+      
+      <RoutesProject />
+      <RandonneeProject />
+      <WeatherTrailsProject />
+      <RobotRent />
       {/* <section className="work-section"> */}
         {/* <ul className="work-title"> */}
 
