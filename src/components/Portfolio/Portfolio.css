@@ -1,5 +1,6 @@
 .portfolio-box{
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     margin: 10px;
 }
