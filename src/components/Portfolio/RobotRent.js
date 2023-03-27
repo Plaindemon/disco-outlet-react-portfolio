@@ -12,10 +12,10 @@ function RobotRent() {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
-          <Card.Link href="#">App Link</Card.Link>
+          <Card.Link href="https://sleepy-thicket-53058.herokuapp.com/">App Link</Card.Link>
         </ListGroup.Item>
         <ListGroup.Item>
-          <Card.Link href="#">Github Link</Card.Link>
+          <Card.Link href="https://github.com/Plaindemon/robot-rent">Github Link</Card.Link>
         </ListGroup.Item>
       </ListGroup>
     </Card>

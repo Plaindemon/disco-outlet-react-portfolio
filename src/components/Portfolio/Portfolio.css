@@ -1,10 +1,29 @@
-.portfolio-box{
-    display: flex;
+.portfolio-container-outer-div{
+    /* display: flex; */
     flex-wrap: wrap;
     padding: 20px;
     margin: 10px;
 }
 
+
+.portfolio-container-inner-div {
+    /* margin: 20px; */
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio-header {
+    font-size: 45px;
+    color: darkgray;
+}
+
+.routes-card {
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+}
 .carousel {
     margin: 10px;
     background-color: #2e2e3a;

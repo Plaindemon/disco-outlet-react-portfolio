@@ -15,14 +15,15 @@ function RoutesProject() {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
-          <Card.Link href="https://glowing-sporky-routes.herokuapp.com/">
+          <Card.Link href="https://shrouded-anchorage-74722.herokuapp.com/">
             App Link
           </Card.Link>
         </ListGroup.Item>
-        <ListGroup.Item><Card.Link href="https://github.com/brotherson67/glowing-spork">
+        <ListGroup.Item>
+          <Card.Link href="https://github.com/Plaindemon/glowing-spork">
             Github Link
-          </Card.Link></ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+          </Card.Link>
+        </ListGroup.Item>
       </ListGroup>
     </Card>
   );

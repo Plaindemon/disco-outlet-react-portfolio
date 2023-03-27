@@ -42,10 +42,10 @@ function ContactForm() {
   };
 
   return (
-    <Form className="contact-container">
-      <div className="contact">
+    <div className="contact-container-outer-div">
+      {/* <div className="contact"> */}
         <h1 data-testid="h1tag">Contact me</h1>
-        <form id="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           <Form.Group>
             <Form.Label htmlFor="name">Name:</Form.Label>
             <input
@@ -68,7 +68,8 @@ function ContactForm() {
             <Form.Label htmlFor="message">Message:</Form.Label>
             <textarea
               name="message"
-              rows="5"
+              className="message-textarea"
+              // rows="3"
               defaultValue={message}
               onBlur={handleChange}
             />
@@ -82,8 +83,8 @@ function ContactForm() {
             Submit
           </Button>
         </form>
-      </div>
-    </Form>
+      {/* </div> */}
+    </div>
   );
 }
 
