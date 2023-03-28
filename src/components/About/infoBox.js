@@ -4,11 +4,11 @@ import Ben from "../../assets/images/ben.jpg";
 
 function AboutMe() {
   return (
-    <Card style={{ width: "20rem" }} className="about-modal">
-      <Card.Img variant="top" src={Ben} />
-      <Card.Body>
-        <Card.Title>About</Card.Title>
-        <Card.Text>
+    <Card className="about-modal">
+      
+      <Card.Body className="about-modal-body">
+        <Card.Title className="about-modal-body-title">About</Card.Title>
+        <Card.Text className="about-modal-body-text">
           {" "}
           Full stack web developer with experience in HTML, javascript, react as
           well as experience outside the web development field in anthropology,
@@ -16,6 +16,7 @@ function AboutMe() {
           experience in sales, customer service, art/ceramics and many other
           fields.
         </Card.Text>
+        <Card.Img className="about-modal-body-img"variant="top" src={Ben} />
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
