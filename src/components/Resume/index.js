@@ -67,7 +67,7 @@ function Resume() {
                   Company 1: Ken Garff Automotive Group
                 </Card.Header>
 
-                <Card.Body className="resume-box">
+                <Card.Body className="resume-body">
                   <Card.Title className="resume-head">
                     {" "}
                     Years worked (2019-2020)
@@ -102,7 +102,7 @@ function Resume() {
                   <Card.Header className="resume-head">
                     Company 2: Michael Kors
                   </Card.Header>
-                  <Card.Body className="resume-box">
+                  <Card.Body className="resume-body">
                     <Card.Title className="resume-head">
                       Years worked (2016-2018)
                     </Card.Title>
